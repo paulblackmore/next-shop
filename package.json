@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --fix",
+    "format": "npx prettier 'app/**/*.tsx' --write"
   },
   "dependencies": {
     "@types/node": "22.10.1",
@@ -21,5 +22,10 @@
     "react-dom": "18.3.1",
     "tailwindcss": "3.4.15",
     "typescript": "5.7.2"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.1"
   }
 }
