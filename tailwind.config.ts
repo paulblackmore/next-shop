@@ -12,6 +12,9 @@ const config: Config = {
       // Add theme styles here
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['light', 'dark'],
+  },
 };
 export default config;
